@@ -1,0 +1,130 @@
+
+@font-face {
+    font-family: IRANSans;
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/eot/IRANSansWeb(FaNum)_Bold.eot');
+    src: url('../fonts/eot/IRANSansWeb(FaNum)_Bold.eot?#iefix') format('embedded-opentype'),url('../fonts/woff2/IRANSansWeb(FaNum)_Bold.woff2') format('woff2'),url('../fonts/woff/IRANSansWeb(FaNum)_Bold.woff') format('woff'),url('../fonts/ttf/IRANSansWeb(FaNum)_Bold.ttf') format('truetype')
+}
+
+@font-face {
+    font-family: IRANSans;
+    font-style: normal;
+    font-weight: 300;
+    src: url('../fonts/eot/IRANSansWeb(FaNum)_Light.eot');
+    src: url('../fonts/eot/IRANSansWeb(FaNum)_Light.eot?#iefix') format('embedded-opentype'),url('../fonts/woff2/IRANSansWeb(FaNum)_Light.woff2') format('woff2'),url('../fonts/woff/IRANSansWeb(FaNum)_Light.woff') format('woff'),url('../fonts/ttf/IRANSansWeb(FaNum)_Light.ttf') format('truetype')
+}
+
+@font-face {
+    font-family: IRANSans;
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/eot/IRANSansWeb(FaNum).eot');
+    src: url('../fonts/eot/IRANSansWeb(FaNum).eot?#iefix') format('embedded-opentype'),url('../fonts/woff2/IRANSansWeb(FaNum).woff2') format('woff2'),url('../fonts/woff/IRANSansWeb(FaNum).woff') format('woff'),url('../fonts/ttf/IRANSansWeb(FaNum).ttf') format('truetype')
+}
+
+h1 {
+    font-weight: normal;
+    color: white;
+}
+
+div.info {
+    margin: 12px 0;
+}
+
+div.info * {
+    color: white;
+}
+
+#icons {
+    display: none;
+    filter:url(#drop-shadow);
+}
+
+.container {
+    position: absolute;
+    left: 1000px;
+}
+
+#vehicle {
+    fill: white;
+}
+
+
+div.menuHolder {
+    user-select: none;
+    -moz-user-select: none;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    top: 30%;
+}
+
+svg.icons {
+    display: none;
+}
+
+svg.menu {
+    position: absolute;
+    overflow: visible;
+    transition: .6s;
+    transition-timing-function: ease-out;
+}
+
+svg.menu.inner {
+    transform: scale(0.66) rotate(-10deg);
+    transition: all .8s;
+    opacity: 0;
+    visibility: hidden;
+}
+
+svg.menu.outer {
+    opacity: 0;
+    visibility: hidden;
+}
+
+svg.menu > g > path {
+    fill: rgb(23 23 23 / 80%);
+}
+
+svg.menu > g.sector > path {
+    cursor: pointer;
+}
+
+svg.menu > g.sector > text,
+svg.menu > g.sector > use {
+    font-family: IRANSans;
+    font-weight: 700;
+    margin-top: 5px;
+    font-size: 3.2px;
+    letter-spacing: 0.2px;
+    cursor: pointer;
+    fill: white;
+}
+
+svg.menu > g.sector:hover > path {
+    fill: #00ccff;
+    stroke-width:2;
+    stroke:#27a2c1;
+}
+
+svg.menu > g.center:hover > circle {
+    fill:#00ccff;
+    stroke-width:2;
+    stroke:#27a2c1;
+}
+
+svg.menu > g.center > circle {
+    cursor: pointer;
+    fill: rgb(23 23 23 / 80%);
+}
+
+svg.menu > g.center > text,
+svg.menu > g.center > use {
+    margin-top: 5px;
+    font-size: 2.5px;
+    cursor: pointer;
+    fill: white;
+}
